@@ -17,7 +17,8 @@ class HomePage : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home_page)
+        setContentView(R.layout.activity_home)
+        setSupportActionBar(findViewById(R.id.toolbar))
 
         bottomNav = findViewById(R.id.bottomNav)
         navController = findNavController(R.id.fragmentContainerView)
