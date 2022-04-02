@@ -7,9 +7,15 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.weather_kotlin.Fragments.RecyclerAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class HomePage : AppCompatActivity() {
+
+    private var layoutManager: RecyclerView.LayoutManager? = null
+    private var adapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>? = null
 
     private lateinit var bottomNav: BottomNavigationView
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -18,6 +24,8 @@ class HomePage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+
         setSupportActionBar(findViewById(R.id.toolbar))
 
         bottomNav = findViewById(R.id.bottomNav)
@@ -26,5 +34,6 @@ class HomePage : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         bottomNav.setupWithNavController(navController)
-    }
+
+
 }
