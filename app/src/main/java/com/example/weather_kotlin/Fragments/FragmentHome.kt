@@ -13,8 +13,7 @@ import com.example.weather_kotlin.R
 class FragmentHome : Fragment() {
 
 
-
-
+    private lateinit var recyclerView: RecyclerView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,5 +28,11 @@ class FragmentHome : Fragment() {
 
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        recyclerView = view.findViewById(R.id.recycler_View)
+        recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        recyclerView.adapter = RecyclerAdapter()
+    }
 
 }

@@ -25,7 +25,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".HomePage"
+            android:name=".HomePageActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

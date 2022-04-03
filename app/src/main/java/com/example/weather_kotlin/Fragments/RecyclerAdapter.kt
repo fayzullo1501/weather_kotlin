@@ -35,7 +35,7 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
         R.drawable.image,)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerAdapter.ViewHolder {
-        val v = LayoutInflater.from(parent.context).inflate(R.layout.fragment_home, parent,false)
+        val v = LayoutInflater.from(parent.context).inflate(R.layout.item_card, parent,false)
         return ViewHolder(v)
     }
 
