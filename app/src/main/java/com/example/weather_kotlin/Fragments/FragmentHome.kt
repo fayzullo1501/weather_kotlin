@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.weather_kotlin.R
+import org.json.JSONObject
+import java.io.InputStream
 
 
 class FragmentHome : Fragment() {
@@ -22,10 +24,6 @@ class FragmentHome : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false)
 
-
-
-
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -33,6 +31,7 @@ class FragmentHome : Fragment() {
         recyclerView = view.findViewById(R.id.recycler_View)
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
         recyclerView.adapter = RecyclerAdapter()
+
     }
 
 }

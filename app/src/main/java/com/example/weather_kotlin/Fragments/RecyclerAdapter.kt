@@ -12,27 +12,27 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
     private var titles = arrayOf("Минск", "Брест", "Гродно", "Витебск", "Полоцк", "Гомель", "Могилёв", "Пинск", "Лепель", "Глубокое")
 
-    private var details = arrayOf("1C, Влажность: 81%, Ветер: 27 км/ч",
-        "1C, Влажность: 81%, Ветер: 27 км/ч",
-        "1C, Влажность: 81%, Ветер: 27 км/ч",
-        "1C, Влажность: 81%, Ветер: 27 км/ч",
-        "1C, Влажность: 81%, Ветер: 27 км/ч",
-        "1C, Влажность: 81%, Ветер: 27 км/ч",
-        "1C, Влажность: 81%, Ветер: 27 км/ч",
-        "1C, Влажность: 81%, Ветер: 27 км/ч",
-        "1C, Влажность: 81%, Ветер: 27 км/ч",
-        "1C, Влажность: 81%, Ветер: 27 км/ч",)
+    private var details = arrayOf("+1C, Влажность: 81%, Ветер: 27 км/ч",
+        "+1C, Влажность: 81%, Ветер: 27 км/ч",
+        "+1C, Влажность: 81%, Ветер: 27 км/ч",
+        "+1C, Влажность: 81%, Ветер: 27 км/ч",
+        "+1C, Влажность: 81%, Ветер: 27 км/ч",
+        "+1C, Влажность: 81%, Ветер: 27 км/ч",
+        "+1C, Влажность: 81%, Ветер: 27 км/ч",
+        "+1C, Влажность: 81%, Ветер: 27 км/ч",
+        "+1C, Влажность: 81%, Ветер: 27 км/ч",
+        "+1C, Влажность: 81%, Ветер: 27 км/ч",)
 
     private val images = intArrayOf(R.drawable.image,
-        R.drawable.image,
-        R.drawable.image,
-        R.drawable.image,
-        R.drawable.image,
-        R.drawable.image,
-        R.drawable.image,
-        R.drawable.image,
-        R.drawable.image,
-        R.drawable.image,)
+        R.drawable.brest,
+        R.drawable.grodno,
+        R.drawable.vitebsk,
+        R.drawable.polock,
+        R.drawable.gomel,
+        R.drawable.mogilyov,
+        R.drawable.pinsk,
+        R.drawable.lepel,
+        R.drawable.glubokoe,)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerAdapter.ViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.item_card, parent,false)

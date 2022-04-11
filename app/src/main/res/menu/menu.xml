@@ -5,6 +5,7 @@
         android:icon="@drawable/ic_home"
         android:title="Главная"/>
     <item
+        android:color="#3FA9FF"
         android:id="@+id/id_map_fragment"
         android:icon="@drawable/ic_map"
         android:title="Карта"/>
